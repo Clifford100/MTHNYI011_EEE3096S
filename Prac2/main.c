@@ -115,7 +115,7 @@ int main(void)
   /* USER CODE BEGIN 2 */
 
   // TODO: Start timer TIM16
-  	 HAL_TIM_Base_Start_IT(&htim16); //Start in (IT) mode
+  	 HAL_TIM_Base_Start_IT(&htim16); //Start in (IT)mode
 
   // TODO: Write all "patterns" to EEPROM using SPI
   	  for (int i = 0; i < sizeof(patterns); i++) {
