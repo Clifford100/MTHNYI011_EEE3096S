@@ -421,7 +421,7 @@ void EXTI0_1_IRQHandler(void)
 	// TODO: Disable DMA transfer and abort IT, then start DMA in IT mode with new LUT and re-enable transfer
 	// HINT: Consider using C's "switch" function to handle LUT changes
   	// Update DMA with new LUT and re-enable transfer
-    lcd_command(CLEAR);
+    	lcd_command(CLEAR);
 	lcd_putstring(waveform_name);
 	lcd_command(LINE_TWO);
 	sprintf(buffer, "Freq: %dHz", frequency);
