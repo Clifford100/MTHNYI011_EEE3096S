@@ -151,7 +151,7 @@ int main(void)
   delay(3000);
   lcd_putstring(waveform_name);
   lcd_command(LINE_TWO);
-  sprintf(buffer, "Freq: %dHz ", frequency);
+  sprintf(buffer, "Freq: %d Hz ", frequency);
   lcd_putstring(buffer);
 
   // TODO: Enable DMA (start transfer from LUT to CCR)
@@ -424,7 +424,7 @@ void EXTI0_1_IRQHandler(void)
     	lcd_command(CLEAR);
 	lcd_putstring(waveform_name);
 	lcd_command(LINE_TWO);
-	sprintf(buffer, "Freq: %dHz", frequency);
+	sprintf(buffer, "Freq: %d Hz", frequency);
 	lcd_putstring(buffer);
 	HAL_GPIO_EXTI_IRQHandler(Button0_Pin); // Clear interrupt flags
 
